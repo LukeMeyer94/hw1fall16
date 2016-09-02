@@ -11,9 +11,6 @@ def sum arr
 end
 
 def max_2_sum arr
-  for i in 0..arr.length
-    print arr[i]
-  end
   if arr[0].to_i > arr[1].to_i
     first = arr[0]
     second = arr[1]
