@@ -72,14 +72,11 @@ def binary_multiple_of_4? s
   end
   for i in 0...s.length
     if valid.include?(s[i])
-      puts "#{s[i]} is good!"
     else
-      puts "#{s[i]} is no good!"
       return false
     end
   end
   num = s.to_i(2)
-  puts num
   if num.to_i % 4 == 0
     return true
   end
@@ -108,7 +105,6 @@ class BookInStock
   
   def price_as_string
     newPrice = "%.2f" % @price
-    puts newPrice
     return "$#{newPrice}"
   end
 end
