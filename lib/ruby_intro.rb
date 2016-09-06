@@ -20,9 +20,9 @@ def max_2_sum arr
   end
   for i in 2...arr.length
     if arr[i].to_i >= first.to_i
-      second = first;
+      second = first
       first = arr[i]
-    elsif (arr[i].to_i > second) && (arr[i] != first)
+    elsif (arr[i].to_i > second.to_i) && (arr[i] != first)
       second = arr[i]
     end
   end
@@ -101,7 +101,6 @@ class BookInStock
   end
   
   def price_as_string
-    newPrice = "%.2f" % @price
-    return "$#{newPrice}"
+    return "$#{"%.2f" % @price}"
   end
 end
